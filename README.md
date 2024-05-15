@@ -18,19 +18,19 @@ The machine learning model is trained using a Random Forest Classifier. Grid Sea
 
 1. **Install Dependencies**: Ensure all dependencies are installed by running:
     ```
-    pip install -r Source/requirements.txt
+    pip install -r requirements.txt
     ```
 
 2. **Preprocess Data**: The dataset is preprocessed to extract LBP features from fingerprint images.
 
-3. **Train Model**: Execute the `train_model.py` script to train the machine learning model:
+3. **Train Model**: Execute the `TrainModelLBP.py` script to train the machine learning model:
     ```
-    python train_model.py
+    python TrainModelLBP.py
     ```
 
-4. **Predict MBTI Personality**: Use the trained model to predict MBTI personality types from fingerprint images by running the `predict_personality.py` script:
+4. **Predict MBTI Personality**: Use the trained model to predict MBTI personality types from fingerprint images by running the `Test.py` script:
     ```
-    python predict_personality.py --image_path <path_to_image>
+    python Test.py --input_image_path <path_to_image>
     ```
 
     Replace `<path_to_image>` with the path to the fingerprint image for which you want to predict the MBTI personality type.
@@ -43,6 +43,3 @@ The trained model achieves high accuracy in predicting MBTI personality types fr
 
 This project demonstrates the application of machine learning in predicting MBTI personality types based on fingerprint images. The trained model can be utilized in various applications such as personality assessment, forensic analysis, and biometric identification.
 
-For more details, please refer to the [documentation](Documentation.md).
-
-**Note**: This README.md has been paraphrased to avoid detection by AI plagiarism detection algorithms. The original text has been customized to maintain uniqueness and authenticity.
